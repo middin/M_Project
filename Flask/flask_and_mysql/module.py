@@ -10,6 +10,15 @@ def get_conn():
   conn = pymysql.connect(host=host, user=user,passwd=password,db=db,port=port)
   return conn
 
+# def get_conn():
+#   host = "mysql.coding.io"
+#   port = 3306
+#   db = "db-BCOYQuvSEn"
+#   user = "user-pk0HzrhjrZ"
+#   password = "39=,8A78v^-lfO05!w;s"   #123
+#   conn = pymysql.connect(host=host, user=user,passwd=password,db=db,port=port)
+#   return conn
+
 class User(object):
   def __init__(self, user_id, user_name):
     self.user_id = user_id
